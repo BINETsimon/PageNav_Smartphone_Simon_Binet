@@ -55,7 +55,7 @@ function firstdiv(){
     var header = document.getElementById("header");
 
     if (CheckPixel < scrollCheck) {
-        if (((scrollCheck - SavePixel) >= 60) && (naveFade == false)){
+        if (((scrollCheck - SavePixel) >= 15) && (naveFade == false)){
             header.style.opacity = "0";
             naveFade = true;
         }else if(naveFade == true){
