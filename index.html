@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link type="text/css" rel="stylesheet" href="CSS/style.css">
+    <title>Page d'acceuil</title>
+</head>
+<body onscroll="firstdiv()">
+    <header id="header">
+        <nav>
+            <div id="burger" onclick="Burger()">
+                <div class="Bu" id="B1"></div>
+                <div class="Bu" id="B2"></div>
+                <div class="Bu" id="B3"></div>
+            </div>
+            <img id="logo" src="media/luffy.gif">
+            <div id="dropdown">
+                <ul>
+                    <li id="pp" onclick="drop()">MY SPACE</li>
+                    <li><a href="#">S'identifier</a></li>
+                    <li><a href="#">S'inscrire</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div id="mobilnav"></div>
+    <main>
+        <div class="main" id="firstdiv">
+            <div id="animborder1"></div>
+            <div id="animborder2"></div>
+            <div id="animborder3"></div>
+            <div id="animborder4"></div>
+            <div id="animborder5"></div>
+            <div id="animbg1"></div>
+            <div class="container">
+                <div class="animtxt">
+                    <h1 id="txt1">Bonjour !</h1>
+                </div>
+                <div class="animtxt">
+                    <h2 id="txt2">Moi c'est Simon.</h2>
+                </div>
+            </div>
+        </div>
+        <div class="main" id="scnddiv">
+            <div class="container">
+                <div class="animtxt">
+                    <img src="media/cat-4143414_1920.jpg" id="img1">
+                </div>
+                <div class="animtxt">
+                        <h1 id="txt3">MIAOU</h1>
+                    </div>
+                    <div class="animtxt">
+                        <h2 id="txt4">super image de chat</h2>
+                    </div>
+            </div>
+        </div>
+        <div class="main" id="thirddiv">
+            <div class="container">
+                <h1>J'aime beaucoup</h1>
+                <h1 id="txt5"></h1>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
+<script src="JS/script.js"></script>

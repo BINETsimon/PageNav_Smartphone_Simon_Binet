@@ -1,0 +1,233 @@
+html {
+  margin: 0;
+  width: 100vw;
+}
+html body {
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+  color: white;
+  overflow: hidden;
+  overflow-y: scroll;
+}
+html body a {
+  color: white;
+  text-decoration: none;
+}
+html body header#header {
+  overflow: hidden;
+  height: 60px;
+  opacity: 1;
+  transition: 0.5s ease;
+}
+html body header#header nav {
+  width: 100vw;
+  position: fixed;
+  background-color: #1b1b1b;
+  display: flex;
+  height: 60px;
+  z-index: 100;
+}
+html body header#header nav #burger {
+  width: 50px;
+  height: 50px;
+  margin: auto;
+  background-color: #3d3d3d;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  cursor: pointer;
+}
+html body header#header nav #burger .Bu {
+  margin: 3px auto;
+  width: 40px;
+  height: 5px;
+  border-radius: 5px;
+  background-color: #d1d1d1;
+  transition: 0.8s ease;
+}
+html body header#header nav #logo {
+  width: 50px;
+  border-radius: 50px;
+  margin: auto;
+}
+html body header#header nav #dropdown {
+  margin: auto;
+  overflow: hidden;
+  height: 60px;
+  transition: 0.8s ease;
+  cursor: pointer;
+}
+html body header#header nav ul {
+  list-style-type: none;
+  padding: 0;
+  background-color: #1b1b1b;
+  padding: 3px;
+}
+html body header#header nav ul #pp {
+  margin-top: 5px;
+  margin-bottom: 16px;
+}
+html body #mobilnav {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 60px;
+  left: -100vw;
+  background: #1b1b1b;
+  transition: 0.8s ease;
+  z-index: 50;
+}
+html body main .main {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+}
+html body main .main .container {
+  margin: auto auto;
+  text-align: center;
+  z-index: 10;
+}
+html body main .animtxt {
+  overflow: hidden;
+}
+html body main #firstdiv {
+  background-image: url("../media/bg1.jpg");
+  background-size: auto 100vh;
+  background-position: center;
+}
+html body main #firstdiv #animbg1 {
+  position: absolute;
+  width: 80%;
+  height: 0;
+  background-color: black;
+  left: 10%;
+  bottom: 20%;
+  opacity: 0.5;
+}
+html body main #firstdiv #animborder1 {
+  position: absolute;
+  width: 0;
+  height: 10px;
+  background-color: white;
+  left: calc(10% - 10px);
+  bottom: calc(20% - 10px);
+}
+html body main #firstdiv #animborder2 {
+  position: absolute;
+  width: 10px;
+  height: 0;
+  left: calc(10% - 10px);
+  bottom: 20%;
+  background-color: white;
+}
+html body main #firstdiv #animborder3 {
+  position: absolute;
+  width: 10px;
+  height: 0;
+  right: calc(10% - 10px);
+  bottom: 20%;
+  background-color: white;
+}
+html body main #firstdiv #animborder4 {
+  position: absolute;
+  width: 0;
+  height: 10px;
+  background-color: white;
+  left: calc(10% - 10px);
+  top: calc(40% - 10px);
+}
+html body main #firstdiv #animborder5 {
+  position: absolute;
+  width: 0;
+  height: 10px;
+  background-color: white;
+  right: calc(10% - 10px);
+  top: calc(40% - 10px);
+}
+html body main #firstdiv h1, html body main #firstdiv h2 {
+  transform: translateY(60px);
+  animation-delay: 1s;
+}
+html body main #scnddiv h1, html body main #scnddiv h2 {
+  color: black;
+  transform: translateY(60px);
+}
+html body main #scnddiv img {
+  transition: 0.8s ease;
+  width: 320px;
+  height: 180px;
+  transform: translateY(-190px);
+}
+html body main #thirddiv {
+  color: black;
+}
+
+.animationTXT {
+  transform: translateY(60px);
+  animation: textAnim 1s ease forwards;
+}
+
+.animationBG {
+  animation: animbg 1 2s ease forwards;
+}
+
+.animation1 {
+  animation: animbd1 1 0.7s ease-in forwards;
+}
+
+.animation2_3 {
+  animation: animbd2_3 1 0.7s linear forwards;
+  animation-delay: 0.7s;
+}
+
+.animation4_5 {
+  animation: animbd4_5 1 0.6s ease-out forwards;
+  animation-delay: 1.4s;
+}
+
+@keyframes animbg {
+  from {
+    height: 0%;
+  }
+  to {
+    height: 40%;
+  }
+}
+@keyframes animbd1 {
+  from {
+    width: 0%;
+    left: 50%;
+  }
+  to {
+    width: calc(80% + 20px);
+    left: calc(10% - 10px);
+  }
+}
+@keyframes animbd2_3 {
+  from {
+    height: 0;
+  }
+  to {
+    height: calc(40% + 10px);
+  }
+}
+@keyframes animbd4_5 {
+  from {
+    width: 0;
+  }
+  to {
+    width: calc(40% + 10px);
+  }
+}
+@keyframes textAnim {
+  from {
+    transform: translateY(60px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
